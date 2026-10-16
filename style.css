@@ -1,0 +1,213 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+body {
+  background-color: #0d0f12;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(13, 15, 18, 0.95);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.logo span {
+  color: #ff3300;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #ffcc00;
+}
+
+/* Botones */
+.btn-primary {
+  background: #ffcc00;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 0px #b38f00;
+  transition: transform 0.1s;
+}
+
+.btn-primary:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(13,15,18,0.4) 0%, rgba(13,15,18,1) 100%),
+              radial-gradient(circle, #2a2e39 0%, #0d0f12 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  margin-top: 60px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.badge {
+  background: #ff3300;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  border-radius: 3px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  color: #ffcc00;
+  text-shadow: 3px 3px 0px #ff3300;
+}
+
+.hero p {
+  font-family: Arial, sans-serif;
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Sección Jugadores / Cards */
+.cards-section {
+  padding: 5rem 8%;
+  text-align: center;
+}
+
+.cards-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #181b22;
+  border: 2px solid #2a2f3d;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #ffcc00;
+  transform: translateY(-5px);
+}
+
+.card-featured {
+  border-color: #ff3300;
+  box-shadow: 0 0 15px rgba(255, 51, 0, 0.3);
+}
+
+.card-tag {
+  background: #2a2f3d;
+  color: #ffcc00;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .stats {
+  font-family: Arial, sans-serif;
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #08090b;
+  font-family: Arial, sans-serif;
+  color: #666;
+  border-top: 1px solid #1a1d24;
+}
